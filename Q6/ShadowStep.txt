@@ -1,0 +1,6 @@
+Lock player movement and turning input
+Create a red outline around character by creating a duplicate red sprite with slightly larger size and layering it behind the character sprite.
+While spell duration isn't finished and player is alive
+  Make afterimages of character by using a for loop with a range i = 1 to 4 incrementing by 1, create a duplicate character sprite with opacity -20% * i and offset in the opposite direction of player cast direction by i * tileSize and duration set to spell duration
+  Move character in cast direction at an increased speed if path is not blocked, otherwise stay still
+If spell duration ends or player dies, remove outline and afterimages and restore movement controls
